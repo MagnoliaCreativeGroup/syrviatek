@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Content Manager</title>
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <script src="https://unpkg.com/decap-cms@3.1.11/dist/decap-cms.js"></script>
 </head>
 <body>
+  <div id="cms"></div> <!-- Placeholder for CMS -->
+
   <script>
-    window.CMS_MANUAL_INIT = true;
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      CMS.init({
-        config: {
-          backend: {
-            name: 'github',
-            repo: 'MagnoliaCreativeGroup/syrviatek',
-            branch: 'main',
-            auth_scope: 'repo',
-            token: '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'
-          },
-          media_folder: 'static/images/uploads',
-          public_folder: '/images/uploads',
-          collections: [
-            {
-              name: 'blog',
-              label: 'Blog',
-              folder: '_posts',
-              create: true,
-              slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
-              fields: [
-                { label: 'Title', name: 'title', widget: 'string' },
-                { label: 'Body', name: 'body', widget: 'markdown' },
-              ],
+    window.addEventListener('load', function() {
+      window.CMS_MANUAL_INIT = true;
+      if (typeof CMS === 'undefined') {
+        console.error('Fuck');
+      } else {
+        console.log('CMS is defined, initializing...');
+        CMS.init({
+          config: {
+            backend: {
+              name: 'github',
+              repo: 'MagnoliaCreativeGroup/syrviatek',
+              branch: 'main',
+              auth_scope: 'repo',
+              token: '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'
             },
-          ],
-        },
-      });
+            media_folder: 'static/images/uploads',
+            public_folder: '/images/uploads',
+            collections: [
+              {
+                name: 'blog',
+                label: 'Blog',
+                folder: '_posts',
+                create: true,
+                slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+                fields: [
+                  { label: 'Title', name: 'title', widget: 'string' },
+                  { label: 'Body', name: 'body', widget: 'markdown' },
+                ],
+              },
+            ],
+          },
+        });
+      }
     });
   </script>
 </body>
