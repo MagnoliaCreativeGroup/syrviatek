@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="/assets/css/main.css"> <!-- Adjust the path as necessary -->
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="blog-posts">
+      <!-- Blog posts will be inserted here -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 My Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/js/main.js"></script> <!-- Adjust the path as necessary -->
+  <script>
+    // Example JavaScript to dynamically load blog posts
+    fetch('/path-to-your-blog-posts.json') // You may need to set up a JSON endpoint or use a static JSON file
+      .then(response => response.json())
+      .then(posts => {
+        const postsContainer = document.getElementById('blog-posts');
+        posts.forEach(post => {
+          const postElement = document.createElement('div');
+          postElement.classList.add('post');
+          postElement.innerHTML = `
+            <h2>${post.title}</h2>
+            <p>${post.body}</p>
+            <a href="/blog/${post.slug}.html">Read more</a>
+          `;
+          postsContainer.appendChild(postElement);
+        });
+      });
+  </script>
+</body>
+</html>

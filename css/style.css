@@ -1,0 +1,6345 @@
+html, body {
+    overflow-x: hidden;
+    margin:0;
+    background-color: #F7F8FA;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+html {
+    scroll-behavior:smooth;
+}
+
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;  
+    line-height: 1.2;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.revealUp1{
+    position: relative;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: 0.75s all ease-in-out;
+    transition-delay: 0.25s;
+}
+
+.revealUp1.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.revealUp2{
+    position: relative;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: 0.75s all ease-in-out;
+    transition-delay: 0.50s;
+
+}
+
+.revealUp2.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.revealUp3{
+    position: relative;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: 0.75s all ease-in-out;
+    transition-delay: 0.75s;
+
+}
+
+.revealUp3.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.revealUp1Load{
+    position: relative;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: 0.75s all ease-in-out;
+    transition-delay: 0.25s;
+}
+
+.revealUp1Load.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.revealUp2Load{
+    position: relative;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: 0.75s all ease-in-out;
+    transition-delay: 0.50s;
+
+}
+
+.revealUp2Load.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.revealUp3Load{
+    position: relative;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: 0.75s all ease-in-out;
+    transition-delay: 0.75s;
+
+}
+
+.revealUp3Load.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.revealUp4{
+    position: relative;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: 0.75s all ease-in-out;
+    transition-delay: 2s;
+}
+
+.revealUp4.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.revealFade{
+    position: relative;
+    opacity: 0;
+    transition: 0.75s all ease-in-out;
+    transition-delay: 0.25s;
+}
+
+.revealFade.active{
+    opacity: 1;
+}
+
+button {
+    padding: 20px 55px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid #F7F8FA;
+    text-align: center;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #001C7D;
+    border-radius: 40px;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+#orangeButton {
+    padding: 20px 55px;
+    background-color: #FF791E;
+    border-radius: 40px;
+    border: 1px solid #F7F8FA;
+    text-align: center;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    cursor: pointer;
+}
+
+#orangeButton:hover {
+    background-color: #001C7D;
+    border-radius: 40px;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+#clearOrangeButton {
+    padding: 20px 55px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid #FF791E;
+    text-align: center;
+    color: #FF791E;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    cursor: pointer;
+}
+
+#clearOrangeButton:hover {
+    background-color: #FF791E;
+    border-radius: 40px;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+#clearBlueButton {
+    padding: 20px 85px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    cursor: pointer;
+}
+
+#clearBlueButton:hover {
+    background-color: #FF791E;
+    border-radius: 40px;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+#badge {
+    max-height: 225px;
+}
+
+.noDecoration {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+}
+
+.noDecorationBox {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;  
+    line-height: 1.2;
+}
+
+.noDecorationFooter {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+}
+
+#contact-icon {
+    vertical-align: middle;
+    max-width: 25px;
+}
+
+#outlinedImage {
+    max-width: 100%;
+    padding: 25px;
+}
+
+#card-elipse {
+    margin-top: -95px;
+}
+
+#card-elipse-2 {
+    margin-top: -135px;
+    padding-bottom: 25px;
+}
+
+#card-elipse-3 {
+    margin-top: -135px;
+    padding-bottom: 25px;
+    text-align: right;
+    position: relative;
+    left: 74%;
+}
+
+#headshot {
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+#headshot:hover {
+box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+moz-transition: all .5s ease-in;
+-o-transition: all .5s ease-in;
+-webkit-transition: all .5s ease-in;
+transition: all .5s ease-in;
+}
+
+hr {
+    border-top: 0.25px solid #F7F8FA;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+/* Start Nav */
+
+.topNav {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #FF791E;
+    border-bottom: solid 3px #F7F8FA;
+    position: fixed;
+    width: 100vw;
+    height: 120px;
+    z-index: 99;
+    grid-template-columns: 4% 14.5% 14.5% 34% 14.5% 14.5% 4%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+      ". services resources logo about contact .";
+      margin: 0;
+      padding: 0;
+  }
+
+  .topNav.scrolled {
+    background-color: #001b7dbd !important;
+    transition: background-color 200ms linear;
+  }
+
+  #navItem {
+    font-size: 20px;
+    moz-transition: all .25s;
+    -o-transition: all .25s;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+  }
+
+
+    #navItem:hover {
+        color: #001C7D;
+        padding: 10px 40px;
+        background: rgba(247, 248, 250, 0.4);
+        border-radius: 40px;
+        moz-transition: all .25s;
+        -o-transition: all .25s;
+        -webkit-transition: all .25s;
+        transition: all .25s;
+    }
+
+  .navServices {
+    grid-area: services;
+    color: #F7F8FA !important;
+    text-align: center;
+  }
+
+  .navResources {
+    grid-area: resources;
+    text-align: center;
+  }
+
+  .navLogo {
+    grid-area: logo;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+    .logo {
+        max-height: 120px;
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
+  .navAbout {
+    grid-area: about;
+    text-align: center;
+  }
+
+  .navContact {
+    grid-area: contact;
+    text-align: center;
+  }
+
+  .topNav .icon {
+    display: none;
+  }
+
+  .dropdownList1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 10px 0;
+  }
+
+  .dropdownList1 a {
+    float: none;
+    color: #F7F8FA;
+    padding: 12px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: 'Raleway' ,sans-serif;
+  }
+
+  .dropdownList1 a:hover {
+    color: #FF791E;
+    padding: 12px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav a:hover, .navServices:hover .dropdownList1 {
+    padding: 10px 40px;
+    background: #001C7D;
+    border-radius: 40px;   
+    color: white;
+  }
+
+  .navServices:hover .dropdownList1 {
+    display: block;
+  }
+
+  .dropdownList2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 10px 0;
+  }
+
+  .dropdownList2 a {
+    float: none;
+    color: #F7F8FA;
+    padding: 12px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: 'Raleway' ,sans-serif;
+  }
+
+  .dropdownList2 a:hover {
+    color: #FF791E;
+    padding: 12px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav a:hover, .navResources:hover .dropdownList2 {
+    padding: 10px 40px;
+    background: #001C7D;
+    border-radius: 40px;   
+    color: white;
+  }
+
+  .navResources:hover .dropdownList2 {
+    display: block;
+  }
+
+  .mobileNav {
+    display: none;
+  }
+
+/* End Nav */
+
+/* Start Home CSS */
+
+.home-hero {
+    background-color: #F7F8FA;
+    background-image: url("/images/hero-background.svg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 1100px;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 36% 14% 15% 15% 20%;
+    grid-template-areas: 
+      "headline headline headline headline headline headline headline . . . . ."
+      "subhead subhead subhead subhead subhead subhead . . . . . ."
+      "cta cta cta cta . . . . . . . down"
+      "fda fda iso iso . . . . . . . ."
+      "fda fda iso iso . . . . . . . .";
+    column-gap: 24px;
+    row-gap: 40px;
+    padding: 205px 80px;
+}
+
+.home-hero-headline {
+    grid-area: headline;
+    color: #F7F8FA;
+}
+
+.home-hero-subhead {
+    grid-area: subhead;
+    color: #F7F8FA;
+}
+
+.home-hero-cta {
+    grid-area: cta;
+
+}
+
+
+@keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+.home-hero-down {
+    grid-area: down;
+    right: 80px;
+    bottom: 20px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.home-hero-fda-badge {
+    grid-area: fda;
+    text-align: left;
+}
+
+.home-hero-reg {
+    grid-area: reg;
+    color: #001C7D;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.home-hero-iso-badge {
+    grid-area: iso;
+    text-align: left;
+}
+
+#testimonialImage {
+    max-width: 100%;
+}
+
+/* Logo Carousel start */
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.logos {
+    overflow: hidden;
+    padding: 50px 0;
+    background: #fff;
+    white-space: nowrap;
+    position: relative;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+  }
+
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to right, rgba(247, 248, 250, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to left, rgba(247, 248, 250, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+
+  .logos-slide {
+    display: inline-block;
+    animation: 95s slide infinite linear;
+  }
+
+  .logos-slide img {
+    height: 90px;
+    margin: 0 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Logo Carousel End */
+
+  .home-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 12% 30% 20% 38%;
+    grid-template-areas: 
+      "subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1"
+      "carousel carousel carousel carousel carousel carousel carousel carousel carousel carousel carousel carousel"
+      "subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2"
+      "card1 card1 card1 card1 card2 card2 card2 card2 card3 card3 card3 card3";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 106px 80px 300px 80px;
+}
+
+.home-section1-subhead {
+    grid-area: subhead1;
+    color: #001C7D;
+    text-align: center;
+}
+
+.home-section1-carousel {
+    grid-area: carousel;
+    margin: 0 -80px;
+}
+
+.home-section1-subhead2 {
+    grid-area: subhead2;
+    color: #001C7D;
+    text-align: center;
+}
+
+.home-section1-card1 {
+    grid-area: card1;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.home-section1-card1:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.home-section1-card2 {
+    grid-area: card2;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.home-section1-card2:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.home-section1-card3 {
+    grid-area: card3;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.home-section1-card3:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.home-section2 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s2-background.svg");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 50% 45%;
+    grid-template-areas: 
+      "subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1"
+      "card1 card1 card1 card1 card1 card1 card2 card2 card2 card2 card2 card2"
+      "card3 card3 card3 card3 card3 card3 card4 card4 card4 card4 card4 card4";
+    column-gap: 24px;
+    row-gap: 60px;
+    padding: 250px 80px 440px 80px;
+}
+
+.home-section2-subhead {
+    grid-area: subhead1;
+    color: #F7F8FA;
+    text-align: center;
+}
+
+.home-section2-card1 {
+    grid-area: card1;
+    align-items: center;
+    padding: 50px 35px;
+    background: #F7F8FA;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+}
+
+.home-section2-card2 {
+    grid-area: card2;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #F7F8FA;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+}
+
+.home-section2-card3 {
+    grid-area: card3;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #F7F8FA;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+}
+
+.home-section2-card4 {
+    grid-area: card4;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #F7F8FA;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+}
+
+.home-section3 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s3-background.png");
+    background-size: initial;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 30% 30% 30% 10%;
+    grid-template-areas: 
+      ". text1 text1 text1 text1 text1 text1 image1 image1 image1 image1 ."
+      ". image2 image2 image2 image2 text2 text2 text2 text2 text2 text2 ."
+      ". text3 text3 text3 text3 text3 text3 image3 image3 image3 image3 ."
+      ". cta cta cta cta cta cta cta cta cta cta .";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 120px 80px 300px 80px;
+}
+
+.home-section3-text1 {
+    grid-area: text1;
+}
+
+.home-section3-image1 {
+    grid-area: image1;
+}
+
+.home-section3-text2 {
+    grid-area: text2;
+}
+
+.home-section3-image2 {
+    grid-area: image2;
+
+}
+
+.home-section3-text3 {
+    grid-area: text3;
+}
+
+.home-section3-image3 {
+    grid-area: image3;
+
+}
+
+.home-section3-cta {
+    grid-area: cta;
+    text-align: center;
+}
+
+.home-section4 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s4-background.svg");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+      ". . . . . . . . . . . ."
+      ". image image image . . text text text text text ."
+      ". image image image . . text text text text text ."
+      ". image image image . . . . . . . .";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 180px 80px 180px 80px;
+}
+
+.home-section4-image {
+    grid-area: image;
+}
+
+.home-section4-text {
+    grid-area: text;
+    color: #F7F8FA;
+    font-weight: 300;
+}
+
+.quote2 {
+    left: 60%;
+}
+
+.home-section5 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s3-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 30% 30% 30% 10%;
+    grid-template-areas: 
+      ". image1 image1 image1 image1 text1 text1 text1 text1 text1 text1 ."
+      ". text2 text2 text2 text2 text2 text2 image2 image2 image2 image2 ."
+      ". image3 image3 image3 image3 text3 text3 text3 text3 text3 text3 ."
+      ". cta cta cta cta cta cta cta cta cta cta .";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 120px 80px 300px 80px;
+}
+
+.home-section5-text1 {
+    grid-area: text1;
+}
+
+.home-section5-image1 {
+    grid-area: image1;
+
+}
+
+.home-section5-text2 {
+    grid-area: text2;
+}
+
+.home-section5-image2 {
+    grid-area: image2;
+
+}
+
+.home-section5-text3 {
+    grid-area: text3;
+}
+
+.home-section5-image3 {
+    grid-area: image3;
+
+}
+
+.home-section5-cta {
+    grid-area: cta;
+    text-align: center;
+}
+
+.home-section6 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20% 40% 40%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead"
+      "card1 card1 card1 card2 card2 card2 card3 card3 card3 card4 card4 card4"
+      "cta cta cta cta cta cta cta cta cta cta cta cta";
+    column-gap: 24px;
+    row-gap: 80px;
+    padding: 60px 80px 200px 80px;
+}
+
+.home-section6-subhead {
+    grid-area: subhead;
+    text-align: center;
+    color: #001C7D;
+}
+
+.home-section6-card1 {
+    grid-area: card1;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 240px;
+    padding: 15px 25px;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.home-section6-card1:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.home-section6-card2 {
+    grid-area: card2;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 240px;
+    padding: 15px 25px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.home-section6-card2:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.home-section6-card3 {
+    grid-area: card3;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 240px;
+    padding: 15px 25px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.home-section6-card3:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.home-section6-card4 {
+    grid-area: card4;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 240px;
+    padding: 15px 25px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.home-section6-card4:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.home-section6-cta {
+    grid-area: cta;
+    text-align: center;
+}
+
+/* End Home CSS */
+
+/* Start Services CSS */
+
+.services-hero {
+    background-color: #FF791E;
+    background-image: url("/images/services-hero-background.svg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 900px;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15% 60% 25%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead . . . . . ."
+      "headline headline headline headline headline headline headline . . . . ."
+      "cta cta cta cta . . . . . . . down";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 255px 80px;
+}
+
+.services-hero-headline {
+    grid-area: headline;
+    color: #F7F8FA;
+}
+
+.services-hero-subhead {
+    grid-area: subhead;
+    color: #F7F8FA;
+}
+
+.services-hero-cta {
+    grid-area: cta;
+}
+
+.services-hero-down {
+    grid-area: down;
+    right: 80px;
+    bottom: 20px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.services-s1 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s3-background.png");
+    background-size: initial;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 24% 4% 5% 20% 8% 5% 20% 8% 5%;
+    grid-template-areas: 
+      ". text1 text1 text1 text1 text1 text1 image1 image1 image1 image1 ."
+      ". cta1 cta1 cta1 cta1 cta1 cta1 image1 image1 image1 image1 ."
+      ". . . . . . . . . . . ."
+      ". image2 image2 image2 image2 . text2 text2 text2 text2 text2 ."
+      ". image2 image2 image2 image2 . cta2 cta2 cta2 cta2 cta2 ."
+      ". . . . . . . . . . . ."
+      ". text3 text3 text3 text3 text3 . image3 image3 image3 image3 ."
+      ". cta3 cta3 cta3 cta3 cta3 . image3 image3 image3 image3 ."
+      ". . . . . . . . . . . .";
+    column-gap: 24px;
+    row-gap: 30px;
+    padding: 120px 80px 300px 80px;
+}
+
+.services-s1-text1 {
+    grid-area: text1;
+}
+
+.services-s1-image1 {
+    grid-area: image1;
+}
+
+.services-s1-cta1 {
+    grid-area: cta1;
+    text-align: left;
+}
+
+.services-s1-text2 {
+    grid-area: text2;
+}
+
+.services-s1-image2 {
+    grid-area: image2;
+}
+
+.services-s1-cta2 {
+    grid-area: cta2;
+    text-align: left;
+}
+
+.services-s1-text3 {
+    grid-area: text3;
+}
+
+.services-s1-image3 {
+    grid-area: image3;
+}
+
+.services-s1-cta3 {
+    grid-area: cta3;
+    text-align: left;
+}
+
+/* End Services CSS */
+
+/* Start Services - Lab CSS */
+
+.lab-hero {
+    background-color: #FF791E;
+    background-image: url("/images/lab-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 900px;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 43% 47%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead . . . . . ."
+      "headline headline headline headline headline headline headline . . . . ."
+      "cta cta cta cta . . . . . . . down";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 135px 80px 280px 80px;
+    margin-top: 115px;
+}
+
+.lab-hero-headline {
+    grid-area: headline;
+    color: #F7F8FA;
+}
+
+.lab-hero-subhead {
+    grid-area: subhead;
+    color: #F7F8FA;
+}
+
+.lab-hero-cta {
+    grid-area: cta;
+}
+
+.lab-hero-down {
+    grid-area: down;
+    right: 80px;
+    bottom: 20px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.lab-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 25% 25% 50%;
+    grid-template-areas: 
+      ". subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 ."
+      ". subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 ."
+      "card1 card1 card1 card1 card2 card2 card2 card2 card3 card3 card3 card3";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 0px 80px 200px 80px;
+    margin-top: -80px;
+}
+
+.lab-section1-subhead {
+    grid-area: subhead1;
+    color: #001C7D;
+    text-align: center;
+}
+
+.lab-section1-subhead2 {
+    grid-area: subhead2;
+    color: #001C7D;
+    text-align: center;
+}
+
+.lab-section1-card1 {
+    grid-area: card1;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.lab-section1-card1:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.lab-section1-card2 {
+    grid-area: card2;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.lab-section1-card2:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.lab-section1-card3 {
+    grid-area: card3;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.lab-section1-card3:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.lab-section2 {
+    background-color: #F7F8FA;
+    background-image: url("/images/lab-s2-background.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100%;
+    grid-template-areas: 
+      "text text text text text text text . image image image image";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 300px 80px 300px 80px;
+}
+
+.lab-s2-text {
+    grid-area: text;
+    color: #F7F8FA;
+}
+
+.lab-s2-image {
+    grid-area: image;
+}
+
+.lab-section3 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 22% 13% 13% 13% 13% 13% 13%;
+    grid-template-areas: 
+      ". subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead ."
+      "box1 box1 box1 box1 box1 box1 box7 box7 box7 box7 box7 box7"
+      "box2 box2 box2 box2 box2 box2 box8 box8 box8 box8 box8 box8"
+      "box3 box3 box3 box3 box3 box3 box9 box9 box9 box9 box9 box9"
+      "box4 box4 box4 box4 box4 box4 box10 box10 box10 box10 box10 box10"
+      "box5 box5 box5 box5 box5 box5 box11 box11 box11 box11 box11 box11"
+      "box6 box6 box6 box6 box6 box6 box12 box12 box12 box12 box12 box12";
+    column-gap: 24px;
+    row-gap: 15px;
+    padding: 200px 80px 300px 80px;
+    margin-left: 15px;
+}
+
+.lab-s3-subhead {
+    grid-area: subhead;
+    text-align: center;
+    color: #001C7D;
+}
+
+.boxText {
+    padding: 30px;
+    width: 60%;
+    font-size: 1.35rem;
+}
+
+.boxText2 {
+    padding: 30px;
+    width: 60%;
+    font-size: 1.35rem;
+}
+
+.lab-s3-box1 {
+    grid-area: box1;
+    background-image: url("/images/top-left-orange-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lab-s3-box2 {
+    grid-area: box2;
+    background-image: url("/images/orange-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lab-s3-box3 {
+    grid-area: box3;
+    background-image: url("/images/orange-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lab-s3-box4 {
+    grid-area: box4;
+    background-image: url("/images/orange-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lab-s3-box5 {
+    grid-area: box5;
+    background-image: url("/images/orange-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lab-s3-box6 {
+    grid-area: box6;
+    background-image: url("/images/bottom-left-orange-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lab-s3-box7 {
+    grid-area: box7;
+    background-image: url("/images/top-right-orange-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lab-s3-box8 {
+    grid-area: box8;
+    background-image: url("/images/orange-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lab-s3-box9 {
+    grid-area: box9;
+    background-image: url("/images/orange-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lab-s3-box10 {
+    grid-area: box10;
+    background-image: url("/images/orange-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lab-s3-box11 {
+    grid-area: box11;
+    background-image: url("/images/orange-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lab-s3-box12 {
+    grid-area: box12;
+    background-image: url("/images/bottom-right-orange-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lab-section4 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s3-background.png");
+    background-size: initial;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+      ". image1 image1 image1 image1 text1 text1 text1 text1 text1 text1  ."
+      ".  text2 text2 text2 text2 text2 text2 image2 image2 image2 image2 ."
+      ". image3 image3 image3 image3 text3 text3 text3 text3 text3 text3  .";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 120px 80px 120px 80px;
+}
+
+.lab-section4-text1 {
+    grid-area: text1;
+}
+
+.lab-section4-image1 {
+    grid-area: image1;
+}
+
+.lab-section4-text2 {
+    grid-area: text2;
+}
+
+.lab-section4-image2 {
+    grid-area: image2;
+
+}
+
+.lab-section4-text3 {
+    grid-area: text3;
+}
+
+.lab-section4-image3 {
+    grid-area: image3;
+}
+
+.lab-section5 {
+    background-color: #F7F8FA;
+    background-image: url("/images/orange-background.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead"
+      "card1 card1 card1 card2 card2 card2 card3 card3 card3 card4 card4 card4";
+    column-gap: 24px;
+    row-gap: 80px;
+    padding: 300px 80px 400px 80px;
+}
+
+.lab-section5-subhead {
+    grid-area: subhead;
+    text-align: center;
+    color: #F7F8FA;
+}
+
+.lab-section5-card1 {
+    grid-area: card1;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 260px;
+    padding: 15px 25px;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.lab-section5-card1:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.lab-section5-card2 {
+    grid-area: card2;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 260px;
+    padding: 15px 25px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.lab-section5-card2:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.lab-section5-card3 {
+    grid-area: card3;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 260px;
+    padding: 15px 25px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.lab-section5-card3:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.lab-section5-card4 {
+    grid-area: card4;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 260px;
+    padding: 15px 25px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.lab-section5-card4:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.lab-section6 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+      ". subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead ."
+      "call call call call email email email email link link link link";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 120px 80px 200px 80px;
+}
+
+.lab-s6-subhead {
+    grid-area: subhead;
+    color: #001C7D;
+    text-align: center;
+}
+
+.lab-s6-call {
+    grid-area: call;
+    text-align: center;
+}
+
+.lab-s6-email {
+    grid-area: email;
+    text-align: center;
+}
+
+.lab-s6-link {
+    grid-area: link;
+    text-align: center;
+}
+
+/* End Services - Lab CSS */
+
+/* Start Services - Plate Coating CSS */
+
+.plate-hero {
+    background-color: #FF791E;
+    background-image: url("/images/plate-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 1000px;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 30% 60%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead . . . . . ."
+      "headline headline headline headline headline headline headline . . . . ."
+      "cta cta cta cta . . . . . . . down";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 135px 80px 280px 80px;
+    margin-top: 115px;
+}
+
+.plate-hero-headline {
+    grid-area: headline;
+    color: #F7F8FA;
+}
+
+.plate-hero-subhead {
+    grid-area: subhead;
+    color: #F7F8FA;
+}
+
+.plate-hero-cta {
+    grid-area: cta;
+}
+
+.plate-hero-down {
+    grid-area: down;
+    right: 80px;
+    bottom: 20px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.plate-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 25% 25% 50%;
+    grid-template-areas: 
+      ". subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 ."
+      ". subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 ."
+      "card1 card1 card1 card1 card2 card2 card2 card2 card3 card3 card3 card3";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 0px 80px 200px 80px;
+    margin-top: -190px;
+}
+
+.plate-section1-subhead {
+    grid-area: subhead1;
+    color: #001C7D;
+    text-align: center;
+}
+
+.plate-section1-subhead2 {
+    grid-area: subhead2;
+    color: #001C7D;
+    text-align: center;
+}
+
+.plate-section1-card1 {
+    grid-area: card1;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.plate-section1-card1:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.plate-section1-card2 {
+    grid-area: card2;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.plate-section1-card2:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.plate-section1-card3 {
+    grid-area: card3;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.plate-section1-card3:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.plate-section2 {
+    background-color: #F7F8FA;
+    background-image: url("/images/lab-s2-background.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100%;
+    grid-template-areas: 
+      "text text text text text text text . image image image image";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 300px 80px 300px 80px;
+}
+
+.plate-s2-text {
+    grid-area: text;
+    color: #F7F8FA;
+}
+
+.plate-s2-image {
+    grid-area: image;
+}
+
+.plate-section3 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 22% 39% 39%;
+    grid-template-areas: 
+      ". subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead ."
+      "box1 box1 box1 box1 box1 box1 box3 box3 box3 box3 box3 box3"
+      "box2 box2 box2 box2 box2 box2 box4 box4 box4 box4 box4 box4";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 200px 40px 300px 40px;
+}
+
+.plate-s3-subhead {
+    grid-area: subhead;
+    text-align: center;
+    color: #001C7D;
+}
+
+.boxTextplate {
+    padding: 90px;
+    width: 40%;
+    margin: 50px;
+}
+
+.boxTextplate2 {
+    padding: 30px;
+    width: 60%;
+    font-size: 1.35rem;
+}
+
+.plate-s3-box1 {
+    grid-area: box1;
+    background-image: url("/images/top-left-orange-box2.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.plate-s3-box2 {
+    grid-area: box2;
+    background-image: url("/images/bottom-left-orange-box2.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.plate-s3-box3 {
+    grid-area: box3;
+    background-image: url("/images/top-right-orange-box2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.plate-s3-box4 {
+    grid-area: box4;
+    background-image: url("/images/bottom-right-orange-box2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.plate-section4 {
+    background-color: #F7F8FA;
+    background-image: url("/images/orange-background.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead"
+      "card1 card1 card2 card2 card3 card3 card4 card4 card5 card5";
+    column-gap: 24px;
+    row-gap: 120px;
+    padding: 300px 80px 400px 80px;
+}
+
+.plate-section4-subhead {
+    grid-area: subhead;
+    text-align: center;
+    color: #F7F8FA;
+}
+
+.plate-section4-card1 {
+    grid-area: card1;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 200px;
+    padding: 5px 25px;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.plate-section4-card1:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.plate-section4-card2 {
+    grid-area: card2;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 200px;
+    padding: 5px 15px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.plate-section4-card2:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.plate-section4-card3 {
+    grid-area: card3;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 200px;
+    padding: 5px 15px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.plate-section4-card3:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.plate-section4-card4 {
+    grid-area: card4;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 200px;
+    padding: 5px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.plate-section4-card4:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.plate-section4-card5 {
+    grid-area: card5;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 200px;
+    padding: 5px 15px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.plate-section4-card5:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+/* End Services - Plate Coating CSS */
+
+/* Start Services - Consulting CSS */
+
+.consulting-hero {
+    background-color: #FF791E;
+    background-image: url("/images/consulting-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 1000px;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 30% 60%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead . . . . . ."
+      "headline headline headline headline headline headline headline . . . . ."
+      "cta cta cta cta . . . . . . . down";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 155px 80px 280px 80px;
+    margin-top: 85px;
+}
+
+.consulting-hero-headline {
+    grid-area: headline;
+    color: #F7F8FA;
+}
+
+.consulting-hero-subhead {
+    grid-area: subhead;
+    color: #F7F8FA;
+}
+
+.consulting-hero-cta {
+    grid-area: cta;
+}
+
+.consulting-hero-down {
+    grid-area: down;
+    right: 80px;
+    bottom: 20px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.consulting-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40% 60%;
+    grid-template-areas: 
+      ". subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 ."
+      "card1 card1 card1 card1 card2 card2 card2 card2 card3 card3 card3 card3";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 0px 80px 200px 80px;
+    margin-top: -190px;
+}
+
+.consulting-section1-subhead {
+    grid-area: subhead1;
+    color: #001C7D;
+    text-align: center;
+}
+
+.consulting-section1-card1 {
+    grid-area: card1;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.consulting-section1-card1:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.consulting-section1-card2 {
+    grid-area: card2;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.consulting-section1-card2:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.consulting-section1-card3 {
+    grid-area: card3;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.consulting-section1-card3:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.consulting-section2 {
+    background-color: #F7F8FA;
+    background-image: url("/images/lab-s2-background.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100%;
+    grid-template-areas: 
+      "text text text text text text text . image image image image";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 300px 80px 300px 80px;
+}
+
+.consulting-s2-text {
+    grid-area: text;
+    color: #F7F8FA;
+}
+
+.consulting-s2-image {
+    grid-area: image;
+}
+
+.consulting-section3 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 22% 78%;
+    grid-template-areas: 
+      ". subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead ."
+      "box1 box1 box1 box1 box1 box1 box2 box2 box2 box2 box2 box2";
+    column-gap: 24px;
+    row-gap: 40px;
+    padding: 200px 40px 300px 40px;
+}
+
+
+#list {
+    margin-left: 0.85em;
+    text-indent: -0.85em;
+    line-height: 1.4;
+}
+
+.consulting-s3-subhead {
+    grid-area: subhead;
+    text-align: center;
+    color: #001C7D;
+}
+
+.consulting-s3-box1 {
+    grid-area: box1;
+    background-image: url("/images/blue-left-background.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.consulting-s3-box2 {
+    grid-area: box2;
+    background-image: url("/images/orange-right-background.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+.consulting-section4 {
+    background-color: #F7F8FA;
+    background-image: url("/images/orange-backgroud-lg.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 50% 45%;
+    grid-template-areas: 
+      "subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1"
+      "card1 card1 card1 card1 card1 card1 card2 card2 card2 card2 card2 card2"
+      "card3 card3 card3 card3 card3 card3 card4 card4 card4 card4 card4 card4";
+    column-gap: 24px;
+    row-gap: 60px;
+    padding: 250px 80px 440px 80px;
+}
+
+.consulting-section4-subhead {
+    grid-area: subhead1;
+    color: #F7F8FA;
+    text-align: center;
+}
+
+.consulting-section4-card1 {
+    grid-area: card1;
+    align-items: center;
+    padding: 50px 35px;
+    background: #F7F8FA;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 350px;
+}
+
+.consulting-section4-card2 {
+    grid-area: card2;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #F7F8FA;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 350px;
+}
+
+.consulting-section4-card3 {
+    grid-area: card3;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #F7F8FA;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 250px;
+}
+
+.consulting-section4-card4 {
+    grid-area: card4;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #F7F8FA;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 250px;
+}
+
+.consulting-section5 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s3-background.png");
+    background-position: center;
+    background-size: 350vw;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 16% 6% 24% 24% 24%;
+    grid-template-areas: 
+      ". subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 ."
+      "card1 card1 card1 card1 card2 card2 card2 card2 card3 card3 card3 card3"
+      ". subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 ."
+      ". list1 list1 list1 list1 list1 list1 list1 list1 . . ."
+      ". . . . list2 list2 list2 list2 list2 list2 list2 list2 "
+      ". list3 list3 list3 list3 list3 list3 list3 list3 . . .";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 200px 80px 450px 80px;
+}
+
+#halfOpaqueIcon {
+    margin-right: -75px;
+    max-height: 220px;
+}
+
+.consulting-section5-subhead {
+    grid-area: subhead1;
+    text-align: center;
+    color: #001C7D;
+}
+
+.consulting-section5-card1 {
+    grid-area: card1;
+    text-align: center;
+    background: #FFFFFF;
+    color: #001C7D;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 170px;
+    padding: 15px 25px;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section5-card1:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.consulting-section5-card2 {
+    grid-area: card2;
+    text-align: center;
+    background: #FFFFFF;
+    color: #001C7D;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 170px;
+    padding: 15px 25px;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section5-card2:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.consulting-section5-card3 {
+    grid-area: card3;
+    text-align: center;
+    background: #FFFFFF;
+    color: #001C7D;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 170px;
+    padding: 15px 25px;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section5-card3:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.consulting-section5-subhead2 {
+    grid-area: subhead2;
+    text-align: center;
+    color: #001C7D;
+}
+
+.consulting-section5-list1 {
+    grid-area: list1;
+    display: flex;
+    color: #001C7D;
+    align-items: center;
+}
+
+.consulting-section5-list2 {
+    grid-area: list2;
+    display: flex;
+    color: #001C7D;
+    align-items: center;
+}
+
+.consulting-section5-list3 {
+    grid-area: list3;
+    display: flex;
+    color: #001C7D;
+    align-items: center;
+}
+
+.consulting-section6 {
+    background-color: #F7F8FA;
+    background-image: url("/images/lab-s2-background.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100%;
+    grid-template-areas: 
+      ". text text text text text text . image image image image";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 300px 80px 300px 80px;
+}
+
+.consulting-s6-text {
+    grid-area: text;
+    color: #F7F8FA;
+}
+
+.consulting-s6-image {
+    grid-area: image;
+}
+
+.consulting-section7 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead subhead"
+      "card1 card1 card1 card2 card2 card2 card3 card3 card3 card4 card4 card4";
+    column-gap: 24px;
+    row-gap: 80px;
+    padding: 200px 80px 200px 80px;
+}
+
+.consulting-section7-subhead {
+    grid-area: subhead;
+    text-align: center;
+    color: #001C7D;
+}
+
+.consulting-section7-card1 {
+    grid-area: card1;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 300px;
+    padding: 15px 35px;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section7-card1:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section7-card2 {
+    grid-area: card2;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 300px;
+    padding: 15px 25px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section7-card2:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section7-card3 {
+    grid-area: card3;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 300px;
+    padding: 15px 25px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section7-card3:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section7-card4 {
+    grid-area: card4;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 300px;
+    padding: 15px 15px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section7-card4:hover {
+    background: #001C7D;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+/* End Services - Consulting CSS */
+
+/* Start Resources CSS */
+
+.resources-hero {
+    background-color: #FF791E;
+    background-image: url("/images/resources-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 1000px;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 30% 60%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead . . . . . ."
+      "headline headline headline headline headline headline headline headline . . . ."
+      ". . . . . . . . . . . down";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 155px 80px 280px 80px;
+    margin-top: 115px;
+}
+
+.resources-hero-headline {
+    grid-area: headline;
+    color: #F7F8FA;
+}
+
+.resources-hero-subhead {
+    grid-area: subhead;
+    color: #F7F8FA;
+}
+
+.resources-hero-down {
+    grid-area: down;
+    right: 80px;
+    bottom: 20px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.resources-section2 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+      "box1 box1 box1 box1 box1 box1 box3 box3 box3 box3 box3 box3"
+      "box2 box2 box2 box2 box2 box2 box4 box4 box4 box4 box4 box4";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 0px 40px 300px 40px;
+    margin-top: -185px;
+}
+
+.boxTextplate {
+    padding: 90px;
+    width: 40%;
+    margin: 50px;
+}
+
+.boxTextplate2 {
+    padding: 30px;
+    width: 60%;
+    font-size: 1.35rem;
+}
+
+.resources-s2-box1 {
+    grid-area: box1;
+    background-image: url("/images/top-left-orange-box3.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding-left: 10px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+.resources-s2-box1:hover {
+    background-image: url("/images/top-left-blue-box3.png");
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+.resources-s2-box2 {
+    grid-area: box2;
+    background-image: url("/images/bottom-left-orange-box3.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 15px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+.resources-s2-box2:hover {
+    background-image: url("/images/bottom-left-blue-box3.png");
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+.resources-s2-box3 {
+    grid-area: box3;
+    background-image: url("/images/top-right-orange-box3.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 15px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+.resources-s2-box3:hover {
+    background-image: url("/images/top-right-blue-box3.png");
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+.resources-s2-box4 {
+    grid-area: box4;
+    background-image: url("/images/bottom-right-orange-box3.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 15px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+.resources-s2-box4:hover {
+    background-image: url("/images/bottom-right-blue-box3.png") !important;
+    background-position: right;
+    background-repeat: no-repeat;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+/* End Resources CSS */
+
+/* Start FAQ CSS */
+
+details {
+    padding: 10px 10px 10px 20px;
+    margin-left: 30px;
+
+}
+
+summary {
+    list-style-type: '+ ';
+    cursor: pointer;
+    list-style-position: outside;
+    font-size: 40px;
+    padding: 0px;
+    justify-content: center;
+}
+
+summary::marker {
+    color: #FF791E;
+    margin-right: 20px;
+}
+
+details[open] > summary {
+    list-style-type: '- ';
+    cursor: pointer;
+    list-style-position: outside;
+    font-size: 40px;
+}
+
+details[open] > .elipses {
+    display: none;
+}
+
+ul.faqList {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+    margin-left: 30px;
+}
+
+.faq-hero {
+    background-color: #FF791E;
+    background-image: url("/images/faq-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 800px;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead . . . . . ."
+      "headline headline headline headline headline headline headline . . . . ."
+      ". . . . . . . . . . . down";
+    column-gap: 24px;
+    row-gap: 40px;
+    padding: 255px 80px 280px 80px;
+}
+
+.faq-hero-headline {
+    grid-area: headline;
+    color: #F7F8FA;
+}
+
+.faq-hero-subhead {
+    grid-area: subhead;
+    color: #F7F8FA;
+}
+
+.faq-hero-down {
+    grid-area: down;
+    right: 80px;
+    bottom: 20px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.faq-section1-m {
+    display: none;
+}
+
+.faq-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+    grid-template-areas: 
+      "question1 question1 question1 question1 question1 question1 question1 question1 question1 question1 question1 question1"
+      "question2 question2 question2 question2 question2 question2 question2 question2 question2 question2 question2 question2"
+      "question3 question3 question3 question3 question3 question3 question3 question3 question3 question3 question3 question3"
+      "question4 question4 question4 question4 question4 question4 question4 question4 question4 question4 question4 question4"
+      "question5 question5 question5 question5 question5 question5 question5 question5 question5 question5 question5 question5"
+      "question6 question6 question6 question6 question6 question6 question6 question6 question6 question6 question6 question6";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 150px 80px 340px 80px;
+}
+
+#faqBox {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 30px 20px;
+    color: #001C7D;
+    margin: 10px 0px;
+}
+
+.faq-s1-q1 {
+    grid-area: question1;
+}
+
+.faq-s1-q2 {
+    grid-area: question2;
+}
+
+.faq-s1-q3 {
+    grid-area: question3;
+}
+
+.faq-s1-q4 {
+    grid-area: question4;
+}
+
+.faq-s1-q5 {
+    grid-area: question5;
+}
+
+.faq-s1-q6 {
+    grid-area: question6;
+}
+
+
+/* End FAQ CSS */
+
+/* Start Materials CSS */
+
+.materials-hero {
+    background-color: #FF791E;
+    background-image: url("/images/materials-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 800px;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead . . . . . ."
+      "headline headline headline headline headline headline headline . . . . ."
+      ". . . . . . . . . . . down";
+    column-gap: 24px;
+    row-gap: 40px;
+    padding: 255px 80px 280px 80px;
+}
+
+.materials-hero-headline {
+    grid-area: headline;
+    color: #F7F8FA;
+}
+
+.materials-hero-subhead {
+    grid-area: subhead;
+    color: #F7F8FA;
+}
+
+.materials-hero-down {
+    grid-area: down;
+    right: 80px;
+    bottom: 20px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.materials-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 30% 30% 30%; 
+    grid-template-areas: 
+      ". . subhead subhead subhead subhead subhead subhead subhead subhead . ."
+      "box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1"
+      "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+      "box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 150px 80px 340px 80px;
+}
+
+.materials-s1-subhead {
+    grid-area: subhead;
+    text-align: center;
+    color: #001C7D;
+}
+
+.materials-s1-box1 {
+    grid-area: box1;
+    background-image: url("/images/materials-blue-box.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-right: 90px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    margin-left: -120px;
+}
+
+.materials-s1-box2 {
+    grid-area: box2;
+    background-image: url("/images/materials-orange-box.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 90px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    margin-right: -120px;
+}
+
+.materials-s1-box3 {
+    grid-area: box3;
+    background-image: url("/images/materials-blue-box.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-right: 90px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    margin-left: -120px;
+}
+
+/* End Materials CSS */
+
+/* Start Studies CSS */
+
+.studies-hero {
+    background-color: #FF791E;
+    background-image: url("/images/studies-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 800px;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 70% 20%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead . . . . . ."
+      "headline headline headline headline headline headline headline . . . . ."
+      ". . . . . . . . . . . down";
+    column-gap: 24px;
+    row-gap: 40px;
+    padding: 255px 80px 280px 80px;
+}
+
+.studies-hero-headline {
+    grid-area: headline;
+    color: #F7F8FA;
+}
+
+.studies-hero-subhead {
+    grid-area: subhead;
+    color: #F7F8FA;
+}
+
+.studies-hero-down {
+    grid-area: down;
+    right: 80px;
+    bottom: 20px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.studies-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 4% 8.5% 6.5% 14.5% 10.5% 9.5% 7.5% 11.5% 7.5% 9% 12.5%; 
+    grid-template-areas: 
+      ". . subhead subhead subhead subhead subhead subhead subhead subhead . ."
+      "box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1"
+      "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+      "box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
+      "box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+      "box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+      "box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6"
+      "box7 box7 box7 box7 box7 box7 box7 box7 box7 box7 box7 box7"
+      "box8 box8 box8 box8 box8 box8 box8 box8 box8 box8 box8 box8"
+      "box9 box9 box9 box9 box9 box9 box9 box9 box9 box9 box9 box9"
+      "box10 box10 box10 box10 box10 box10 box10 box10 box10 box10 box10 box10";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 0px 80px 590px 80px;
+}
+
+.studies-s1-subhead {
+    grid-area: subhead;
+    text-align: center;
+    color: #001C7D;
+}
+
+.studies-s1-box1 {
+    grid-area: box1;
+    background-image: url("/images/studies-blue-box1.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-right: 90px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    margin-left: -120px;
+}
+
+.studies-s1-box2 {
+    grid-area: box2;
+    background-image: url("/images/studies-orange-box1.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 90px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    margin-right: -120px;
+}
+
+.studies-s1-box3 {
+    grid-area: box3;
+    background-image: url("/images/studies-blue-box2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-right: 140px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    margin-left: -120px;
+}
+
+.studies-s1-box4 {
+    grid-area: box4;
+    background-image: url("/images/studies-orange-box2.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 90px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    margin-right: -120px;
+}
+
+.studies-s1-box5 {
+    grid-area: box5;
+    background-image: url("/images/studies-blue-box3.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-right: 90px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    margin-left: -120px;
+}
+
+.studies-s1-box6 {
+    grid-area: box6;
+    background-image: url("/images/studies-orange-box3.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 90px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    margin-right: -120px;
+}
+
+.studies-s1-box7 {
+    grid-area: box7;
+    background-image: url("/images/studies-blue-box4.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-right: 90px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    margin-left: -120px;
+}
+
+.studies-s1-box8 {
+    grid-area: box8;
+    background-image: url("/images/studies-orange-box4.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 90px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    margin-right: -120px;
+}
+
+.studies-s1-box9 {
+    grid-area: box9;
+    background-image: url("/images/studies-blue-box5.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-right: 90px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    margin-left: -120px;
+}
+
+.studies-s1-box10 {
+    grid-area: box10;
+    background-color: #FF791E;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 90px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    margin-right: -120px;
+    margin-left: -90px;
+}
+
+
+/* End studies CSS */
+
+/* Start Contact CSS */
+
+/* form CSS */
+
+.form2 {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    color: #001C7D;
+}
+
+/* Style for form input fields */
+.input2[type="text"],
+.input2[type="email"],
+.input2[type="tel"],
+.textarea2 {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    background-color: #F7F8FA;
+    border-radius: 5px;
+    box-sizing: border-box; /* Make sure padding is included in width */
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#form-button2 {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 20px 55px;
+    background-color: #FF791E;
+    border-radius: 40px;
+    border: 1px solid #F7F8FA;
+    font-size: 20px;
+    text-align: center;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    cursor: pointer;
+}
+
+#form-button2:hover {
+    background-color: #001C7D;
+    border-radius: 40px;
+    color: #F7F8FA;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+/* Style for form error messages */
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Optional: Style for form container when it's displayed in smaller screens */
+@media screen and (max-width: 600px) {
+    .form1, .form2 {
+        width: 80%;
+    }
+}
+
+.contact-hero {
+    background-color: #FF791E;
+    background-image: url("/images/contact-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 800px;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 5% 60% 35%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead . . . . . ."
+      "headline headline headline headline headline headline headline . . . . ."
+      ". . . . . . . . . . . down";
+    column-gap: 24px;
+    row-gap: 40px;
+    padding: 285px 80px 180px 80px;
+    margin-bottom: 0px;
+}
+
+.contact-hero-headline {
+    grid-area: headline;
+    color: #F7F8FA;
+}
+
+.contact-hero-subhead {
+    grid-area: subhead;
+    color: #F7F8FA;
+}
+
+.contact-hero-down {
+    grid-area: down;
+    right: 80px;
+    bottom: 20px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.verticalText {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+#numberEllipse {
+    margin: 0px 30px 0px 0px;
+    max-height: 70px;
+}
+
+.contact-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100%; 
+    grid-template-areas: 
+      ". text text text text text text form form form form .";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 180px 80px 240px 80px;
+}
+
+.contact-s1-text {
+    grid-area: text;
+    color: #001C7D;
+}
+
+.contact-s1-form {
+    grid-area: form;
+}
+
+#map {
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    margin: 0px;
+    padding: 0px;
+    width: 80%;
+}
+
+.contact-section3 {
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100%;
+    grid-template-areas: 
+      ". text text text text map map map map map map map";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 200px 80px 200px 80px;
+}
+
+.contact-s3-text {
+    grid-area: text;
+    color: #001C7D;
+}
+
+.contact-s3-map {
+    grid-area: map;
+    text-align: center;
+}
+
+/* End Contact CSS */
+
+/* Start About CSS */
+
+.about-hero {
+    background-color: #FF791E;
+    background-image: url("/images/about-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 800px;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15% 45% 30% 10%;
+    grid-template-areas: 
+      "subhead subhead subhead subhead subhead subhead . . . . . ."
+      "headline headline headline headline headline headline . . . . . ."
+      "subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 . . . . . ."
+      ". . . . . . . . . . . down";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 255px 80px;
+}
+
+.about-hero-headline {
+    grid-area: headline;
+    color: #F7F8FA;
+}
+
+.about-hero-subhead {
+    grid-area: subhead;
+    color: #F7F8FA;
+}
+
+.about-hero-subhead2 {
+    grid-area: subhead2;
+    color: #F7F8FA;
+}
+
+.about-hero-down {
+    grid-area: down;
+    right: 80px;
+    bottom: 20px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.about-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20% 40% 40%;
+    grid-template-areas: 
+      ". subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 ."
+      "card1 card1 card1 card1 card2 card2 card2 card2 card3 card3 card3 card3"
+      "card4 card4 card4 card4 card5 card5 card5 card5 card6 card6 card6 card6";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 180px 80px 300px 80px;
+}
+
+.about-section1-subhead {
+    grid-area: subhead1;
+    color: #001C7D;
+    text-align: center;
+}
+
+.about-section1-card1 {
+    grid-area: card1;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    height: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.about-section1-card1:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.about-section1-card2 {
+    grid-area: card2;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    height: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.about-section1-card2:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.about-section1-card3 {
+    grid-area: card3;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    height: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.about-section1-card3:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.about-section1-card4 {
+    grid-area: card4;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    height: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.about-section1-card4:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.about-section1-card5 {
+    grid-area: card5;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    height: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.about-section1-card5:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.about-section1-card6 {
+    grid-area: card6;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    height: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border: solid 1px #fff;
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.about-section1-card6:hover {
+    border: solid 1px #001C7D;
+    box-shadow: 0px 0px 13px rgba(255, 121, 30, 0.5);
+    border-radius: 15px;
+    moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.about-section2 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15% 85%;
+    grid-template-areas:
+      "subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2"
+      "box1 box1 box1 box1 box1 box1 box2 box2 box2 box2 box2 box2";
+    column-gap: 24px;
+    row-gap: 40px;
+    padding: 0px 40px 200px 40px;
+}
+
+.about-s2-subhead1 {
+    grid-area: subhead1;
+    text-align: center;
+    color: #001C7D;
+}
+
+.about-s2-subhead2 {
+    grid-area: subhead2;
+    text-align: center;
+    color: #001C7D;
+}
+
+.about-s2-box1 {
+    grid-area: box1;
+    background-image: url("/images/about-left-blue.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 30px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+.about-s2-box2 {
+    grid-area: box2;
+    background-image: url("/images/about-right-orange.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-right: 15px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+.about-section3 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 16% 42% 42%;
+    grid-template-areas: 
+      "subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1"
+      "box1 box1 box1 box1 box1 box1 box3 box3 box3 box3 box3 box3"
+      "box2 box2 box2 box2 box2 box2 box4 box4 box4 box4 box4 box4";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 0px 40px 300px 40px;
+}
+
+.about-s3-subhead1 {
+    grid-area: subhead1;
+    text-align: center;
+    color: #001C7D;
+}
+
+.about-s3-box1 {
+    grid-area: box1;
+    background-image: url("/images/about-top-left-orange.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 30px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+.about-s3-box2 {
+    grid-area: box2;
+    background-image: url("/images/about-bottom-left-orange.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 30px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+.about-s3-box3 {
+    grid-area: box3;
+    background-image: url("/images/about-top-right-blue.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-right: 15px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+.about-s3-box4 {
+    grid-area: box4;
+    background-image: url("/images/about-bottom-right-blue.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-right: 15px;
+    moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+
+#linkedInButton {
+    max-width: 250px;
+}
+
+.about-section5 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+      ". subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 ."
+      ". . image image image image text text text text . .";
+    column-gap: 24px;
+    row-gap: 80px;
+    padding: 0px 40px 200px 40px;
+}
+
+.about-s5-subhead {
+    grid-area: subhead1;
+    text-align: center;
+    color: #001C7D;
+}
+
+.about-s5-image {
+    grid-area: image;
+    text-align: center;
+}
+
+.about-s5-text {
+    grid-area: text;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    color: #001C7D;
+}
+
+.about-section4 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas: 
+      ". subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 ."
+      "image image image image image image image image image image image image"
+      ". cta cta cta cta cta cta cta cta cta cta .";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 0px 40px 200px 40px;
+}
+
+.about-s4-subhead {
+    grid-area: subhead1;
+    text-align: center;
+    color: #001C7D;
+}
+
+.about-s4-image {
+    grid-area: image;
+    text-align: center;
+}
+
+.about-s4-cta {
+    grid-area: cta;
+    text-align: center;
+}
+
+  
+.land {
+  fill: #7B7B7B;
+  fill-opacity: 1;
+  stroke:white;
+  stroke-opacity: 1;
+  stroke-width:0.5;
+}
+
+.land2 {
+  fill: #CCCCCC;
+  fill-opacity: 1;
+  stroke:white;
+  stroke-opacity: 1;
+  stroke-width:0.5;
+}
+  
+.path {
+  stroke-width: 1;
+  stroke-dasharray: 300px;
+  stroke-dashoffset: 200px;
+  animation: draw 8s linear infinite;
+}
+        
+.path2 {
+    stroke-width: 1;
+    stroke-dasharray:300px;
+    stroke-dashoffset: 300px;
+    stroke-dashoffset: 300px;
+    animation: draw 12s linear infinite;
+}
+        
+@keyframes draw {
+  to {
+    stroke-dashoffset: 2000;
+  }
+}
+  
+  svg .land:hover {
+      fill: #FF791E;
+      fill-opacity: 1;
+      stroke: #FF791E;
+      stroke-opacity: 1;
+      stroke-width: 1;
+      animation: all 0.2s ease;
+  }
+  svg .land {
+      fill: #ffffff;
+      fill-opacity: 1;
+      stroke: #a9d0f5;
+      stroke-opacity: 1;
+      stroke-width: 1;
+      animation: all 0.2s ease;
+  }
+  
+  svg .land2 {
+      fill: #c9d0f9;
+      fill-opacity: 1;
+      stroke: white;
+      stroke-opacity: 1;
+      stroke-width: 0.5;
+  }
+  
+  svg .land2:hover {
+      fill: #7d90ff;
+      fill-opacity: 1;
+      stroke: white;
+      stroke-opacity: 1;
+      stroke-width: 0.5;
+  }
+  
+  svg .path2 {
+      stroke-width: 1;
+      stroke-dasharray: 300px;
+      stroke-dashoffset: 300px;
+      stroke-dashoffset: 300px;
+      animation: draw 12s linear infinite;
+      stroke: #7887e2;
+  }
+  
+  svg .path {
+      stroke-width: 1;
+      stroke-dasharray: 300px;
+      stroke-dashoffset: 200px;
+      animation: draw 8s linear infinite;
+      stroke: #7887e2;
+  }
+  
+  svg .mappoint{
+    stroke:#001C7D;
+    fill:#001C7D;
+  }
+
+  svg .mappoint2{
+    stroke:#FF791E;
+    fill: #FF791E;
+  }
+  
+  @keyframes bounce{
+       from {transform: translateY(0);}
+       to   {transform: translateY(-10px);}
+  }
+
+
+/* End About CSS */
+
+
+.footer {
+    background-color: #F7F8FA;
+    background-image: url("/images/footer-background.svg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 70% 1% 29%;
+    grid-template-areas: 
+      ". contact contact contact logo logo logo logo . links links ."
+      ". line line line line line line line line line line ."
+      ". linkedin . . . . . . copyright copyright copyright .";
+    column-gap: 24px;
+    row-gap: 40px;
+    padding: 120px 80px 120px 80px;
+}
+
+.footer-contact {
+    grid-area: contact;
+    color: #F7F8FA;
+    position: relative;
+
+}
+
+.footer-logo-invert {
+    grid-area: logo;
+    text-align: center;
+}
+
+.footer-quick-links {
+    grid-area: links;
+    color: #F7F8FA;
+}
+
+.footer-line {
+    grid-area: line;
+}
+
+.footer-linked {
+    grid-area: linkedin;
+}
+
+.footer-copyright {
+    grid-area: copyright;
+    color: #F7F8FA;
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin-top: ;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .topNav .navResources, .topNav .navServices, .topNav .navAbout, .topNav .navContact {
+        display: none;
+    }
+    
+    
+    .topNav {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background-color: #FF791E;
+        border-bottom: solid 3px #F7F8FA;
+        position: fixed;
+        width: 100vw;
+        height: 70px;
+        z-index: 99;
+        grid-template-columns: 50% 45% 5%;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+          "logo hamburger .";
+        margin: 0;
+        padding: 0;
+    }
+        
+    .logo {
+        display: none;
+    }
+    
+    .mobile-logo {
+        display: block;
+        position: absolute;
+        max-height: 70px;
+    }
+    
+    .mobileNav {
+        display: block;
+        
+    }
+    
+    .menuItem {
+        display: block;
+        margin: 2rem 2rem;
+        font-size: 1.8rem;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .menuItem2 {
+        display: block;
+        margin: 0.5rem 2rem;
+        font-size: 1rem;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .material-icons {
+        background-color: #001C7D;
+        color: #ffffff;
+    }
+    
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        cursor: pointer;
+    }
+    
+    .closeIcon {
+        display: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        text-align: left;
+        margin-right: 5px;
+    }
+    
+    .menu {
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: #001b7ddd;
+        color: white;
+        list-style: none;
+        padding-top: 4rem;
+    }
+    
+    .showMenu {
+        transform: translateY(0);
+        background-color: #001b7ddd;
+        color: #ffffff;
+        backdrop-filter: blur(50px);
+    }
+    
+    .menuIcon {
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        border: 0;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .plate-section3 {
+        background-color: #F7F8FA;
+        overflow: hidden;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 22.5% 22.5% 22.5% 22.5%;
+        grid-template-areas: 
+          "subhead"
+          "box1"
+          "box2"
+          "box3"
+          "box4";
+        column-gap: 24px;
+        row-gap: 15px;
+        padding: 75px 10px 200px 10px;
+        margin: 0px;
+    }
+    
+    .boxTextPlate {
+        padding-left: 40px;
+        width: 100%;
+        font-size: 15px;
+        margin: 0px 5px 0px 5px;
+    }
+    
+    .boxTextPlate2 {
+        padding: 25px;
+        width: 100%;
+        font-size: 15px;
+        margin: 10px 10px 0px 5px;
+    }
+    
+    .plate-s3-box1 {
+        text-align: center;
+        margin-right: 130px;
+    }
+    
+    .plate-s3-box2 {
+        text-align: center;
+        margin-right: 130px;
+    }
+    
+    .plate-s3-box3 {
+        text-align: center;
+        margin-left: 130px;
+        padding: 0px;
+    }
+    
+    .plate-s3-box4 {
+        text-align: center;
+        margin-left: 130px;
+        padding: 0px;
+    }
+
+    .consulting-section3 {
+        background-color: #F7F8FA;
+        overflow: hidden;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 22% 39% 39%;
+        grid-template-areas: 
+          "subhead"
+          "box1"
+          "box2";
+        column-gap: 24px;
+        row-gap: 40px;
+        padding: 90px 20px 100px 20px;
+    }
+
+    .resources-section2 {
+        background-color: #F7F8FA;
+        overflow: hidden;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas: 
+          "box1"
+          "box2"
+          "box3"
+          "box4";
+        column-gap: 24px;
+        row-gap: 15px;
+        padding: 0px 10px 200px 10px;
+        margin-top: -250px;
+    }
+    
+    .resources-s2-box1 {
+        text-align: center;
+        margin-right: 130px;
+        margin-left: 70px;
+    }
+    
+    .resources-s2-box2 {
+        text-align: center;
+        margin-right: 130px;
+        margin-left: 70px;
+    }
+    
+    .resources-s2-box3 {
+        text-align: center;
+        margin-left: 130px;
+        margin-right: 70px;
+    }
+    
+    .resources-s2-box4 {
+        text-align: center;
+        margin-left: 130px;
+        margin-right: 70px;
+    }
+
+    .materials-s1-box1 {
+        padding-right: 30px;
+        margin-left: -460px;
+    }
+    
+    .materials-s1-box2 {
+        padding-left: 30px;
+        margin-right: -460px;
+    }
+    
+    .materials-s1-box3 {
+        padding-right: 30px;
+        margin-left: -460px;
+    }
+
+    .about-section1 {
+        background-color: #F7F8FA;
+        overflow: hidden;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 15.33% 15.33% 15.33% 15.33% 15.33% 15.33%;
+        grid-template-areas: 
+          "subhead1"
+          "card1"
+          "card2"
+          "card3"
+          "card4"
+          "card5"
+          "card6";
+        column-gap: 24px;
+        row-gap: 50px;
+        padding: 180px 20px 380px 20px;
+    }
+
+    .about-section2 {
+        background-color: #F7F8FA;
+        overflow: hidden;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 11% 39% 11% 39%;
+        grid-template-areas: 
+          "subhead1"
+          "box1"
+          "subhead2"
+          "box2";
+        column-gap: 24px;
+        row-gap: 40px;
+        padding: 90px 20px 300px 20px;
+    }
+
+    .about-s2-box1 {
+        margin-right: -90px;
+        margin-left: 180px;
+    }
+
+    .about-s2-box2 {
+        margin-left: -90px;
+        margin-right: 180px;
+    }
+
+    .about-section3 {
+        background-color: #F7F8FA;
+        overflow: hidden;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 23% 23% 23% 23%;
+        grid-template-areas: 
+          "subhead1"
+          "box1"
+          "box2"
+          "box3"
+          "box4";
+        column-gap: 24px;
+        row-gap: 15px;
+        padding: 0px 10px 200px 10px;
+    }
+    
+    .about-s3-box1 {
+        text-align: center;
+        margin-right: 130px;
+        margin-left: 70px;
+    }
+    
+    .about-s3-box2 {
+        text-align: center;
+        margin-right: 130px;
+        margin-left: 70px;
+    }
+    
+    .about-s3-box3 {
+        text-align: center;
+        margin-left: 130px;
+        margin-right: 70px;
+    }
+    
+    .about-s3-box4 {
+        text-align: center;
+        margin-left: 130px;
+        margin-right: 70px;
+    }
+
+    .studies-hero {
+        background-color: #FF791E;
+        background-image: url("/images/studies-hero-background.png");
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        display: grid;
+        height: 600px;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 80%;
+        grid-template-areas: 
+          "subhead"
+          "headline";
+          column-gap: 24px;
+          row-gap: 10px;
+          padding: 185px 20px 0px 20px;
+          margin-top: 0px;
+          margin-bottom: -5px;
+    }
+    
+    .studies-hero-down {
+        display: none;
+    }
+    
+    .studies-section1 {
+        background-color: #F7F8FA;
+        overflow: hidden;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 4% 7.6% 9.6% 10.6% 12.6% 8.6% 9.6% 8.6% 9.6% 6.6% 12.6%; 
+        grid-template-areas: 
+          "subhead"
+          "box1"
+          "box2"
+          "box3"
+          "box4"
+          "box5"
+          "box6"
+          "box7"
+          "box8"
+          "box9"
+          "box10";
+        column-gap: 24px;
+        row-gap: 0px;
+        padding: 0px 10px 390px 10px;
+    }
+    
+
+}
+
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;  
+    line-height: 1.4;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+#card-elipse-3 {
+    margin-top: -135px;
+    padding-bottom: 25px;
+    text-align: right;
+    position: relative;
+    left: 52%;
+}
+
+.topNav .navResources, .topNav .navServices, .topNav .navAbout, .topNav .navContact {
+    display: none;
+}
+
+
+.topNav {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #FF791E;
+    border-bottom: solid 3px #F7F8FA;
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    z-index: 99;
+    grid-template-columns: 50% 45% 5%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+      "logo hamburger .";
+    margin: 0;
+    padding: 0;
+}
+    
+.logo {
+    display: none;
+}
+
+.mobile-logo {
+    display: block;
+    position: absolute;
+    max-height: 70px;
+}
+
+.mobileNav {
+    display: block;
+    
+}
+
+.menuItem {
+    display: block;
+    margin: 2rem 2rem;
+    font-size: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.menuItem2 {
+    display: block;
+    margin: 0.5rem 2rem;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.material-icons {
+    background-color: #001C7D;
+    color: #ffffff;
+}
+
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.closeIcon {
+    display: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    margin-right: 5px;
+}
+
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #001b7ddd;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.showMenu {
+    transform: translateY(0);
+    background-color: #001b7ddd;
+    color: #ffffff;
+    backdrop-filter: blur(50px);
+}
+
+.menuIcon {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+    font-size: 22px;
+    text-align: center;
+}
+
+.noDecoration {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+}
+
+.noDecorationBox {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+}
+
+#clearBlueButton {
+    padding: 20px 25px;
+}
+
+#orangeButton {
+    padding: 20px 25px;
+}
+
+.home-hero {
+    background-color: #F7F8FA;
+    background-image: url("/images/hero-background.svg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 900px;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 26% 15% 9% 15% 15%;
+    grid-template-areas: 
+      "headline headline"
+      "subhead subhead"
+      "cta cta"
+      "fda iso"
+      "fda iso";
+    column-gap: 24px;
+    row-gap: 40px;
+    padding: 125px 30px;
+}
+
+.home-hero-fda-badge {
+    grid-area: fda;
+    text-align: center;
+}
+
+.home-hero-iso-badge {
+    grid-area: iso;
+    text-align: center;
+}
+
+.home-hero-down {
+    display: none;
+}
+
+.logos-slide img {
+    height: 20px;
+    margin: 0 20px;
+  }
+
+.home-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 15% 10% 25.34% 25.34% 25.34%;
+    grid-template-areas: 
+      "subhead1"
+      "carousel"
+      "subhead2"
+      "card1"
+      "card2" 
+      "card3";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 56px 20px 400px 20px;
+}
+
+.home-section2 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s2-background.svg");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 23.75% 23.75% 23.75% 23.75%;
+    grid-template-areas: 
+      "subhead1"
+      "card1"
+      "card2"
+      "card3"
+      "card4";
+    column-gap: 24px;
+    row-gap: 80px;
+    padding: 180px 20px 540px 20px;
+}
+
+.home-section3 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s3-background.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 15% 15% 15% 15% 15% 10%;
+    grid-template-areas: 
+      "image1"
+      "text1"
+      "image2"
+      "text2"
+      "image3"
+      "text3"
+      "cta";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 60px 20px 300px 20px;
+}
+
+.home-section4 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s4-background.svg");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+      "text"
+      "image";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 380px 20px 180px 20px;
+}
+
+.home-section5 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s3-background.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 15% 15% 15% 15% 15% 10%;
+    grid-template-areas: 
+      "image1"
+      "text1"
+      "image2"
+      "text2"
+      "image3"
+      "text3"
+      "cta";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 120px 20px 300px 20px;
+}
+
+.home-section6 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 21% 21% 21% 21% 11%;
+    grid-template-areas: 
+      "subhead"
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "cta";
+    column-gap: 24px;
+    row-gap: 80px;
+    padding: 60px 20px 500px 20px;
+}
+
+/* Services CSS Start */
+
+.services-hero {
+    background-color: #FF791E;
+    background-image: url("/images/services-hero-background.svg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 700px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 30% 65%;
+    grid-template-areas: 
+      "subhead"
+      "headline"
+      "cta";
+    column-gap: 24px;
+    row-gap: 0px;
+    padding: 125px 20px 0px 20px;
+}
+
+.services-hero-down {
+    display: none;
+}
+
+.services-s1 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s3-background.png");
+    background-size: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 9% 9% 15% 9% 9% 15% 9% 9% ;
+    grid-template-areas: 
+      "image1"
+      "text1"
+      "cta1"
+      "image2"
+      "text2"
+      "cta2"
+      "image3"
+      "text3"
+      "cta3";
+    column-gap: 24px;
+    row-gap: 40px;
+    padding: 70px 20px 500px 20px;
+}
+
+.services-s1-cta1 {
+    grid-area: cta1;
+    text-align: center;
+}
+.services-s1-cta2 {
+    grid-area: cta2;
+    text-align: center;
+}
+.services-s1-cta3 {
+    grid-area: cta3;
+    text-align: center;
+}
+
+/* Services CSS End */
+
+/* Services -> Lab CSS start */
+
+.lab-hero {
+    background-color: #FF791E;
+    background-image: url("/images/lab-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 900px;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 28% 62%;
+    grid-template-areas: 
+      "subhead"
+      "headline"
+      "cta";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 165px 20px 180px 20px;
+    margin-top: 0px;
+}
+
+.lab-hero-down {
+    display: none;
+}
+
+.lab-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 10% 25% 25% 25%;
+    grid-template-areas: 
+      "subhead1"
+      "subhead2"
+      "card1"
+      "card2" 
+      "card3";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 0px 20px 300px 20px;
+    margin-top: -180px;
+}
+
+.lab-section2 {
+    background-color: #F7F8FA;
+    background-image: url("/images/lab-s2-background.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+      "text"
+      "image";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 300px 20px 300px 20px;
+}
+
+.lab-section3 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 16.1% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7%;
+    grid-template-areas: 
+      "subhead"
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6"
+      "box7"
+      "box8"
+      "box9"
+      "box10"
+      "box11"
+      "box12";
+    column-gap: 24px;
+    row-gap: 15px;
+    padding: 75px 0px 300px 0px;
+    margin: 0px;
+}
+
+.boxText {
+    padding-left: 0px;
+    width: 100%;
+    font-size: 15px;
+    margin: 0px 5px 0px 15px;
+}
+
+.boxText2 {
+    padding: 0px;
+    width: 100%;
+    font-size: 15px;
+    margin: 0px 10px 0px 15px;
+}
+
+.lab-s3-box1 {
+    text-align: center;
+    margin-right: -30px;
+}
+
+.lab-s3-box2 {
+    text-align: center;
+    margin-right: -30px;
+}
+
+.lab-s3-box3 {
+    text-align: center;
+    margin-right: -30px;
+}
+
+.lab-s3-box4 {
+    text-align: center;
+    margin-right: -30px;
+}
+
+.lab-s3-box5 {
+    text-align: center;
+    margin-right: -30px;
+}
+
+.lab-s3-box6 {
+    text-align: center;
+    margin-right: -30px;
+}
+
+.lab-s3-box7 {
+    text-align: center;
+    margin-left: -30px;
+}
+
+.lab-s3-box8 {
+    text-align: center;
+    margin-left: -30px;
+}
+
+.lab-s3-box9 {
+    text-align: center;
+    margin-left: -30px;
+}
+
+.lab-s3-box10 {
+    text-align: center;
+    margin-left: -30px;
+}
+
+.lab-s3-box11 {
+    text-align: center;
+    margin-left: -30px;
+}
+
+.lab-s3-box12 {
+    text-align: center;
+    margin-left: -30px;
+}
+
+.lab-section4 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s3-background.png");
+    background-size: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%;
+    grid-template-areas: 
+      "image1"
+      "text1"
+      "image2"
+      "text2"
+      "image3"
+      "text3";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 220px 20px 150px 20px;
+}
+
+.lab-section5 {
+    background-color: #F7F8FA;
+    background-image: url("/images/orange-background.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 16% 21% 21% 21% 21%;
+    grid-template-areas: 
+      "subhead"
+      "card1"
+      "card2"
+      "card3"
+      "card4";
+    column-gap: 24px;
+    row-gap: 80px;
+    padding: 300px 20px 650px 20px;
+}
+
+.lab-section5-card1 {
+    height: 200px;
+}
+
+.lab-section5-card2 {
+    height: 180px;
+}
+
+.lab-section5-card3 {
+    height: 170px;
+}
+
+.lab-section5-card4 {
+    height: 200px;
+}
+
+.lab-section6 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 30% 30% 30%;
+    grid-template-areas: 
+      "subhead"
+      "call" 
+      "email" 
+      "link";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 20px 20px 350px 20px;
+}
+
+/* Services -> Lab CSS end */
+
+/* Start Services - Plate Coating CSS Start */
+
+.plate-hero {
+    background-color: #FF791E;
+    background-image: url("/images/plate-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 1000px;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 20% 70%;
+    grid-template-areas: 
+      "subhead"
+      "headline"
+      "cta";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 165px 20px 180px 20px;
+    margin-top: 0px;
+}
+
+.plate-hero-down {
+    display: none;
+}
+
+.plate-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 10% 25% 25% 25%;
+    grid-template-areas: 
+      "subhead1"
+      "subhead2"
+      "card1"
+      "card2" 
+      "card3";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 0px 20px 300px 20px;
+    margin-top: -280px;
+}
+
+.plate-section2 {
+    background-color: #F7F8FA;
+    background-image: url("/images/lab-s2-background.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+      "text"
+      "image";
+    column-gap: 0px;
+    row-gap: 50px;
+    padding: 300px 40px 300px 40px;
+}
+
+.plate-section3 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 22.5% 22.5% 22.5% 22.5%;
+    grid-template-areas: 
+      "subhead"
+      "box1"
+      "box2"
+      "box3"
+      "box4";
+    column-gap: 24px;
+    row-gap: 15px;
+    padding: 75px 10px 200px 10px;
+    margin: 0px;
+}
+
+.boxTextPlate {
+    padding-left: 40px;
+    width: 100%;
+    font-size: 15px;
+    margin: 0px 5px 0px 5px;
+}
+
+.boxTextPlate2 {
+    padding: 25px;
+    width: 100%;
+    font-size: 15px;
+    margin: 10px 10px 0px 5px;
+}
+
+.plate-s3-box1 {
+    text-align: center;
+    margin-right: -90px;
+}
+
+.plate-s3-box2 {
+    text-align: center;
+    margin-right: -90px;
+}
+
+.plate-s3-box3 {
+    text-align: center;
+    margin-left: -90px;
+    padding: 0px;
+}
+
+.plate-s3-box4 {
+    text-align: center;
+    margin-left: -90px;
+    padding: 20px;
+}
+
+.plate-section4 {
+    background-color: #F7F8FA;
+    background-image: url("/images/orange-background.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 18% 18% 18% 18% 18%;
+    grid-template-areas: 
+      "subhead"
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5";
+    column-gap: 24px;
+    row-gap: 60px;
+    padding: 300px 20px 600px 20px;
+}
+
+
+.plate-section4-card1 {
+    grid-area: card1;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 175px;
+    padding: 5px 25px;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.plate-section4-card2 {
+    grid-area: card2;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 175px;
+    padding: 5px 15px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.plate-section4-card3 {
+    grid-area: card3;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 175px;
+    padding: 5px 15px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.plate-section4-card4 {
+    grid-area: card4;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 175px;
+    padding: 25px 60px 0px 60px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.plate-section4-card5 {
+    grid-area: card5;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 175px;
+    padding: 5px 15px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+/* End Services - Plate Coating CSS Start */
+
+/* Start Services - Consulting CSS */
+
+
+.consulting-hero {
+    background-color: #FF791E;
+    background-image: url("/images/plate-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 1000px;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 20% 70%;
+    grid-template-areas: 
+      "subhead"
+      "headline"
+      "cta";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 165px 20px 180px 20px;
+    margin-top: 0px;
+}
+
+.consulting-hero-down {
+    display: none;
+}
+
+.consulting-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 10% 25% 25% 25%;
+    grid-template-areas: 
+      "subhead1"
+      "subhead2"
+      "card1"
+      "card2" 
+      "card3";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 0px 20px 300px 20px;
+    margin-top: -280px;
+}
+
+.consulting-section2 {
+    background-color: #F7F8FA;
+    background-image: url("/images/lab-s2-background.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+      "text"
+      "image";
+    column-gap: 0px;
+    row-gap: 50px;
+    padding: 300px 40px 300px 40px;
+}
+
+.consulting-section3 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 22% 39% 39%;
+    grid-template-areas: 
+      "subhead"
+      "box1"
+      "box2";
+    column-gap: 24px;
+    row-gap: 40px;
+    padding: 90px 20px 100px 20px;
+}
+
+.consulting-s3-box1 {
+    text-align: left;
+    margin-right: -160px;
+}
+
+.consulting-s3-box2 {
+    text-align: left;
+    margin-left: -160px;
+}
+
+.consulting-section4 {
+    background-color: #F7F8FA;
+    background-image: url("/images/orange-background.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 9% 24.75% 24.75% 24.75% 24.75%;
+    grid-template-areas: 
+      "subhead1"
+      "card1"
+      "card2"
+      "card3"
+      "card4";
+    column-gap: 24px;
+    row-gap: 80px;
+    padding: 380px 20px 740px 20px;
+}
+
+.consulting-section4-card3 {
+    grid-area: card3;
+    display: grid;
+    align-items: center;
+    padding: 50px 35px;
+    background: #F7F8FA;
+    box-shadow: 0px 0px 13px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 320px;
+}
+
+.consulting-section5 {
+    background-color: #F7F8FA;
+    background-image: url("/images/s3-background.png");
+    background-position: center;
+    background-size: 350vw;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 12% 12% 12% 6% 18% 18% 18%;
+    grid-template-areas: 
+      "subhead1"
+      "card1"
+      "card2"
+      "card3"
+      "subhead2"
+      "list1"
+      "list2"
+      "list3";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 0px 10px 550px 10px;
+}
+
+.consulting-section5-card1 {
+    grid-area: card1;
+    text-align: center;
+    background: #FFFFFF;
+    color: #001C7D;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 190px;
+    padding: 25px 25px;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+.consulting-section5-card2 {
+    grid-area: card2;
+    text-align: center;
+    background: #FFFFFF;
+    color: #001C7D;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 170px;
+    padding: 15px 15px;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+.consulting-section5-card3 {
+    grid-area: card3;
+    text-align: center;
+    background: #FFFFFF;
+    color: #001C7D;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 170px;
+    padding: 15px 25px;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section6 {
+    background-color: #F7F8FA;
+    background-image: url("/images/lab-s2-background.png");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+      "text"
+      "image";
+    column-gap: 0px;
+    row-gap: 50px;
+    padding: 300px 10px 300px 10px;
+}
+
+.consulting-section7 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 23% 23% 23% 23%;
+    grid-template-areas: 
+      "subhead"
+      "card1"
+      "card2"
+      "card3"
+      "card4";
+    column-gap: 24px;
+    row-gap: 80px;
+    padding: 60px 20px 500px 20px;
+}
+
+
+.consulting-section7-card1 {
+    grid-area: card1;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 250px;
+    padding: 15px 35px;
+    moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section7-card2 {
+    grid-area: card2;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 250px;
+    padding: 15px 25px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section7-card3 {
+    grid-area: card3;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 250px;
+    padding: 15px 25px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.consulting-section7-card4 {
+    grid-area: card4;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    height: 250px;
+    padding: 15px 15px;
+        moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+/* End Services - Consulting CSS */
+
+/* Start Resources CSS */
+
+.resources-hero {
+    background-color: #FF791E;
+    background-image: url("/images/resources-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 1000px;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80%;
+    grid-template-areas: 
+      "subhead"
+      "headline";
+      column-gap: 24px;
+      row-gap: 10px;
+      padding: 185px 20px 160px 20px;
+      margin-top: 0px;
+  }
+  
+.resources-hero-down {
+    display: none;
+}
+
+.resources-section2 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+      "box1"
+      "box2"
+      "box3"
+      "box4";
+    column-gap: 24px;
+    row-gap: 15px;
+    padding: 0px 10px 200px 10px;
+    margin-top: -250px;
+}
+
+.resources-s2-box1 {
+    text-align: center;
+    margin-right: -90px;
+}
+
+.resources-s2-box2 {
+    text-align: center;
+    margin-right: -90px;
+}
+
+.resources-s2-box3 {
+    text-align: center;
+    margin-left: -90px;
+    padding: 0px;
+}
+
+.resources-s2-box4 {
+    text-align: center;
+    margin-left: -90px;
+    padding: 20px;
+}
+
+/* End Resources CSS */
+
+/* Start FAQ CSS */
+
+details {
+    padding: 10px 10px 10px 20px;
+    margin-left: 10px;
+
+}
+
+summary {
+    list-style-type: '+ ';
+    cursor: pointer;
+    list-style-position: outside;
+    font-size: 40px;
+    
+}
+
+summary::marker {
+    color: #644707;
+    margin-right: 20px;
+}
+
+details[open] > summary {
+    list-style-type: '- ';
+    cursor: pointer;
+    list-style-position: outside;
+    font-size: 40px;
+}
+
+details[open] > .elipses {
+    display: none;
+}
+
+ul.faqList {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+    margin-left: 30px;
+}
+
+.faq-hero {
+    background-color: #FF791E;
+    background-image: url("/images/faq-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 600px;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80%;
+    grid-template-areas: 
+      "subhead"
+      "headline";
+      column-gap: 24px;
+      row-gap: 10px;
+      padding: 185px 20px 0px 20px;
+      margin-top: 0px;
+}
+
+.faq-hero-down {
+    display: none;
+}
+
+.faq-section1 {
+    display: none;
+}
+
+.faq-section1-m {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 17% 17% 12% 13% 16.66% 16.66%;
+    grid-template-areas: 
+      "question1"
+      "question2"
+      "question3"
+      "question4"
+      "question5"
+      "question6";
+    column-gap: 24px;
+    row-gap: 30px;
+    padding: 80px 20px 100px 20px;
+}
+
+#faqBox {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 5px rgba(141, 138, 138, 0.05);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 30px 20px;
+    color: #001C7D;
+    margin: 10px 0px;
+}
+
+/* End FAQ CSS */
+
+/* Start Materials CSS */
+
+.materials-hero {
+    background-color: #FF791E;
+    background-image: url("/images/materials-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 600px;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80%;
+    grid-template-areas: 
+      "subhead"
+      "headline";
+      column-gap: 24px;
+      row-gap: 10px;
+      padding: 185px 20px 0px 20px;
+      margin-top: 0px;
+}
+
+.materials-hero-down {
+    display: none;
+}
+
+.materials-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 30% 30% 30%; 
+    grid-template-areas: 
+      "subhead"
+      "box1"
+      "box2"
+      "box3";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 150px 10px 340px 10px;
+}
+
+.materials-s1-box1 {
+    padding-right: 30px;
+    margin-left: -460px;
+}
+
+.materials-s1-box2 {
+    padding-left: 30px;
+    margin-right: -460px;
+}
+
+.materials-s1-box3 {
+    padding-right: 30px;
+    margin-left: -460px;
+}
+
+/* End Materials CSS */
+
+/* Start Studies CSS */
+
+.studies-hero {
+    background-color: #FF791E;
+    background-image: url("/images/studies-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 600px;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80%;
+    grid-template-areas: 
+      "subhead"
+      "headline";
+      column-gap: 24px;
+      row-gap: 10px;
+      padding: 185px 20px 0px 20px;
+      margin-top: 0px;
+      margin-bottom: -5px;
+}
+
+.studies-hero-down {
+    display: none;
+}
+
+.studies-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 4% 7.6% 9.6% 10.6% 12.6% 8.6% 9.6% 8.6% 9.6% 6.6% 12.6%; 
+    grid-template-areas: 
+      "subhead"
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6"
+      "box7"
+      "box8"
+      "box9"
+      "box10";
+    column-gap: 24px;
+    row-gap: 0px;
+    padding: 0px 10px 390px 10px;
+}
+
+#mapImage {
+    display: none;
+}
+
+.studies-s1-box1 {
+    padding-right: 30px;
+    margin-left: 0px;
+    min-height: 800px;
+}
+
+.studies-s1-box2 {
+    padding-left: 30px;
+    margin-right: 0px;
+    min-height: 800px;
+}
+
+.studies-s1-box3 {
+    padding-right: 30px;
+    margin-left: 0px;
+    min-height: 800px;
+}
+
+.studies-s1-box4 {
+    padding-left: 30px;
+    margin-right: 0px;
+    min-height: 800px;
+}
+
+.studies-s1-box5 {
+    padding-right: 30px;
+    margin-left: 0px;
+    min-height: 800px;
+}
+
+.studies-s1-box6 {
+    padding-left: 30px;
+    margin-right: 0px;
+    min-height: 600px;
+}
+
+.studies-s1-box7 {
+    padding-right: 30px;
+    margin-left: 0px;
+    min-height: 600px;
+}
+
+.studies-s1-box8 {
+    padding-left: 30px;
+    margin-right: 0px;
+    min-height: 600px;
+}
+
+.studies-s1-box9 {
+    padding-right: 30px;
+    margin-left: 0px;
+    min-height: 600px;
+}
+
+.studies-s1-box10 {
+    padding-left: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 260px;
+    height: 1000px;
+}
+
+/* End Studies CSS */
+
+/* Start Contact CSS */
+
+.contact-hero {
+    background-color: #FF791E;
+    background-image: url("/images/contact-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 600px;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80%;
+    grid-template-areas: 
+      "subhead"
+      "headline";
+      column-gap: 24px;
+      row-gap: 10px;
+      padding: 185px 20px 0px 20px;
+      margin-top: 0px;
+}
+
+.contact-hero-down {
+    display: none;
+}
+
+
+.contact-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%; 
+    grid-template-areas: 
+      "text"
+      "form";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 80px 20px 240px 20px;
+}
+
+.contact-section3 {
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%; 
+    grid-template-areas: 
+      "text"
+      "map";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 80px 20px 240px 20px;
+}
+
+.contact-s3-text {
+    margin-left: 35px;
+}
+
+/* End Contact CSS */
+
+/* Start About CSS */
+
+.about-hero {
+    background-color: #FF791E;
+    background-image: url("/images/about-hero-background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    height: 700px;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 25% 60%;
+    grid-template-areas: 
+      "subhead"
+      "headline"
+      "subhead2";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 155px 20px;
+}
+
+.about-hero-down {
+    display: none;
+}
+
+.about-section1 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 15.33% 15.33% 15.33% 15.33% 15.33% 15.33%;
+    grid-template-areas: 
+      "subhead1"
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 180px 20px 380px 20px;
+}
+
+.about-section2 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 45% 5% 43%;
+    grid-template-areas: 
+      "subhead1"
+      "box1"
+      "subhead2"
+      "box2";
+    column-gap: 24px;
+    row-gap: 50px;
+    padding: 90px 20px 200px 20px;
+}
+
+.about-s2-box1 {
+    text-align: left;
+    margin-right: -160px;
+}
+
+.about-s2-box2 {
+    text-align: left;
+    margin-left: -160px;
+}
+
+.about-section3 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 22.5% 22.5% 22.5% 22.5%;
+    grid-template-areas: 
+      "subhead1"
+      "box1"
+      "box2"
+      "box3"
+      "box4";
+    column-gap: 24px;
+    row-gap: 15px;
+    padding: 75px 10px 200px 10px;
+    margin: 0px;
+}
+
+.about-s3-box1 {
+    text-align: center;
+    margin-right: -90px;
+}
+
+.about-s3-box2 {
+    text-align: center;
+    margin-right: -90px;
+}
+
+.about-s3-box3 {
+    text-align: center;
+    margin-left: -90px;
+    padding: 0px;
+}
+
+.about-s3-box4 {
+    text-align: center;
+    margin-left: -90px;
+    padding: 20px;
+}
+
+.about-section5 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 55% 35%;
+    grid-template-areas: 
+      "subhead1"
+      "image" 
+      "text";
+    column-gap: 24px;
+    row-gap: 40px;
+    padding: 0px 20px 200px 20px;
+}
+
+.about-s5-subhead {
+    grid-area: subhead1;
+    text-align: center;
+    color: #001C7D;
+}
+
+.about-s5-image {
+    grid-area: image;
+    text-align: center;
+}
+
+.about-s5-text {
+    grid-area: text;
+    text-align: center;
+    color: #001C7D;
+}
+
+.about-section4 {
+    background-color: #F7F8FA;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-areas: 
+      "subhead1"
+      "image"
+      "cta";
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 0px 20px 50px 20px;
+}
+
+/* End About CSS */
+
+.footer {
+    background-color: #F7F8FA;
+    background-image: url("/images/footer-background.svg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 10% 30% 30% 30%;
+    grid-template-rows: 24% 44% 20% 1% 11%;
+    grid-template-areas: 
+      "logo logo logo logo"
+      "contact contact contact contact"
+      "links links links links"
+      "line line line line"
+      "linkedin . copyright copyright";
+    column-gap: 24px;
+    row-gap: 40px;
+    padding: 80px 80px 220px 80px;
+}
+
+.invert-logo {
+    max-height: 115px;
+}
+
+}
